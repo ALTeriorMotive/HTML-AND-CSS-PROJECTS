@@ -96,3 +96,33 @@ img{
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 19);
 }
+
+.column{
+    float: left;
+    width: 48%; /*Places the images side by side when the float property is used*/
+    padding: 10px;
+}
+
+/*Goups elements inside a div element together and forces any floating elements outside of the div under it with this class selector*/
+.container{
+    background-size: 100% !important;
+    margin: 0px -60px 50px -40px;
+    padding-top: 5px; /*Padding will add an inline space so the elements don't sit on the edge of the div*/
+    padding-bottom: 10px;
+}
+
+/*This is part of the .container class selector to format the elements to display in a table like format*/
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Sets up the size of each div that holds an image so the image can be centered*/
+
+.image-container{
+    position: relative;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
