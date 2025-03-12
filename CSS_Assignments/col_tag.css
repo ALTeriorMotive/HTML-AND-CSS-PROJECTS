@@ -1,0 +1,33 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.filler{
+    background-color: white;
+}
+
+.tables{
+    background-color: lightcyan;
+}
+
+.chairs{
+    background-color: lightgreen;
+}
+
+.sofa{
+    background-color: lightsalmon;
+}
+
+td{
+    text-align: center;
+}
+
+th, td{
+    border: 1px solid lightgrey;
+    padding: 2px 5px;
+}
+
+body{
+    background-color: darkgrey;
+}
