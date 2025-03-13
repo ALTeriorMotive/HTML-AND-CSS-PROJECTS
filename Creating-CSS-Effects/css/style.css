@@ -16,7 +16,7 @@ ul{
 
 a{
     display: block;
-    font-family: Calibri, sans-serif;
+    font-family: "Lora", serif; /* Changes font to a linked font from fonts.google.com */
     font-size: 23px;
     font-weight: 600;
     color: white;
@@ -129,14 +129,14 @@ img{
 /* IMAGE TWO */
 .zoom{
     transform: scale(1); /* Sets the base size of image 2 for a zoom in effect */
-    transition: 0.5s ease-out; /* Creats a smooth transition of the image zooming back to its original size */
+    transition: 0.5s ease; /* Creats a smooth transition of the image zooming back to its original size */
     z-index: 3; /* Sets image position in the stack layer behind the navbar so zoom effect does not cover the navbar */
 }
 
 /* Creates a zoom in effect on image 2 */
 .zoom:hover{
-    transform: scale(1.5); /* Scales image 2 to grow half its size */
-    transition: 0.5s ease-out;
+    transform: translateY(12.5%) scale(1.75, 0.75); /* Utilizes translate and scale properties to generate a squashing effect */
+    transition: 0.5s ease;
 }
 
 /* IMAGE THREE */
