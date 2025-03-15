@@ -152,9 +152,40 @@ p{
     padding: 10px;
 }
 
+/* Styling for screens 1200px or smaller */
+@media screen and (max-width: 1200px){
+    .column{
+        width: 100%;
+        padding: 0px;
+        margin-left: -15px; /* Centers each column on the screen */
+    }    
+}
+
 /* Specifically styles the first 7 img tag elements contained in elements with the .column class */
 .column img:nth-child(-n + 7){
     width: 500px;
     height: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recipe-container{
+    width: 500px;
+    height: 350px;
+    margin: 100px auto 180px; /* Shorthand value top, right and left, then bottom */
+}
+
+/* Styling for mobile size screen */
+@media screen and (max-width: 600px){
+    .column img:nth-child(-n + 7){
+        width: 350px;
+        height: 225px;
+    }
+    .recipe-container{
+        width: 350px;
+        height: 225px;
+    }
+}
+
+.recipe-card-background{
+    background-color: rgb(149, 238, 223);
 }
