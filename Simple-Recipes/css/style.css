@@ -1,6 +1,9 @@
 /* Import link for the Josefin Slab font from fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* Import link for the Sacramento font from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 html{
     overflow-x: hidden; /* Prevents the browser from displaying a left to right scroll bar as a result of negative margin values */
     scroll-behavior: smooth; /* Creates a smooth scrolling effect when a bookmark link is clicked */
@@ -90,4 +93,68 @@ td p{
     font-weight: 600;
     text-align: center;
     color: rgb(247, 177, 188);
+}
+
+/* BODY */
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+/* HEADERS */
+
+h1{
+    font-family: "Sacramento", cursive; /* Font from fonts.google.com */
+    font-size: 80px;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+h2, h3, h4{
+    font-family: 'Josefin Slab', serif; /* Font from fonts.google.com */
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 177, 188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* PARAGRAPHS */
+p{
+    font-family: 'Josefin Slab', serif; /* Font from fonts.google.com */
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+/* IMAGES */
+
+/* Positions elements to sit side by side on the screen */
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+/* Specifically styles the first 7 img tag elements contained in elements with the .column class */
+.column img:nth-child(-n + 7){
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
