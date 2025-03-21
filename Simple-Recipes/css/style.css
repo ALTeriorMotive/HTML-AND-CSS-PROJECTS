@@ -267,3 +267,26 @@ p{
 #featured-button:hover{
     background-color: rgb(247, 177, 188);
 }
+
+/* IMAGE FLIP */
+
+/* Positions the flip effect, defines transition time, and defines a 3D effect */
+.flip{
+    position: relative;
+    width: 100%;
+    height: 100%; /* Setting the width and height to 100% will allow the effect to take up 100% of the space available */
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    transform-style: preserve-3d; /* Treats elements as 3D objects instead of flat (2D) objects */
+}
+
+.flip:hover{
+    transform: rotateY(-180deg); /* Rotates an element from right to left */
+}
+
+.flip-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
