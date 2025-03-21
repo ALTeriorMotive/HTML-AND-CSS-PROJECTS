@@ -326,3 +326,84 @@ input[type="button"]:hover{
     background-color: rgb(247, 177, 188);
     color: white;
 }
+
+/* CONTACT FORM CSS */
+
+/* Sets up the content within the div tag containing the ID contact to be centered on the webpage */
+#contact{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form{
+    display: table; /* This will display the form in a table format as rows and columns */
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto; /* The browser will automatically calculate margins to center the form on the screen */
+}
+
+/* This will specifically target the input tags that are nested within the form tags */
+form input{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /* Transitions back to light grey when a user clicks away from an input field */
+}
+
+form input:focus{
+    border: 2px solid rgb(1, 128, 106);
+    color: black;
+    outline: none; /* Removes default border added when the focus pseudo class is triggered */
+    transition: 0.3s ease-out;
+}
+
+label{
+    font-family: 'Josefin Slab', serif; /* Font from fonts.google.com */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both; /* Will allow the user to resize the text are both in width and height */
+    border: 3px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+    transition: 0.3s ease-out; /* Will transition back to light grey */
+}
+
+textarea:focus{
+    color: black;
+    border: 3px solid rgb(1, 128, 106);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: rgb(1, 128, 106);
+    border: none;
+    border-radius: 35px;
+    font-family: 'Josefin Slab', serif; /* Font from fonts.google.com */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right; /* Positions the submit button to the bottom right of the form */
+}
+
+
+input[type="submit"]:hover{
+    background-color: rgb(247, 177, 188);
+}
