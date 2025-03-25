@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+/* Imported Teko font from fonts.google.com */
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+/* Imported Tektur font from fonts.google.com */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Imported Noto Sans font from fonts.google.com */
+
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+/* Imported Poller One font from fonts.google.com */
+
+p{
+    font-family: "Teko", sans-serif; /* Font from fonts.google.com */
+    font-size: 24px;
+    font-weight: 450;
+}
+
+h1, h2, summary{
+    font-family: "Tektur", sans-serif; /* Font from fonts.google.com */
+    font-size: 2em;
+}
+
+summary{
+    font-size: 1.4em;
+}
+
+a{
+    font-family: "Noto Sans", sans-serif; /* Font from fonts.google.com */
+    font-size: 30px;
+}
+
+
+td{
+    font-family: "Poller One", serif; /* Font from fonts.google.com */
+    font-size: 1.5em;
+}
+
+
+/* FORM CSS */
+input, textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 340px;
+    margin: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 3px;
+}
+
+form{
+    display: flex;
+    width: 700px;
+    margin: 0px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+input[name="submit"]{
+    font-family: "Noto Sans", sans-serif; /* Font from fonts.google.com */
+}
