@@ -34,8 +34,13 @@ a{
 td{
     font-family: "Poller One", serif; /* Font from fonts.google.com */
     font-size: 1.5em;
+    padding-right: 10px;
 }
 
+
+table{
+    margin-bottom: 20px;
+}
 
 /* FORM CSS */
 input, textarea{
