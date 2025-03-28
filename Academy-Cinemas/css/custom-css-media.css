@@ -1,3 +1,10 @@
+@media screen and (min-width: 300px){
+    /* calc(minimum size + (maximum size - minimum size) * ((viewport width percentage - minimum viewport width) / (maximum viewport width - minimum viewport width))) */
+    h1{
+        font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+
 @media screen and (max-width:990px){
     .navbar-collapse{
         background-color: var(--secondary-color);
