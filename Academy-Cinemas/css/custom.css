@@ -16,6 +16,10 @@
     --secondary-font-family: "Yesteryear", cursive;
 }
 
+html{
+    scroll-padding-top: 100px;
+}
+
 body{
     background-image: url(../images/theater-curtains.jpg);
     background-size: 100% 120%; /* 100% horizontally and 120% vertically */
@@ -144,10 +148,29 @@ b{
     font-weight: 600;
 }
 
+img{
+    border-radius: 5px;
+}
+
 /* MOVIE CARDS */
 
 .container{
     padding: 100px;
+}
+
+.card{
+    border: 5px solid var(--main-color);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-body{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.spacer{
+    padding-top: 50px;
 }
 
 /* BUTTONS */

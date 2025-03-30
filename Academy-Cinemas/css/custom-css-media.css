@@ -6,7 +6,7 @@
     h4{
         font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1920 - 320)));
     }
-    .lead{
+    .lead, .btn{
         font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
 }
@@ -27,5 +27,17 @@
     .dropdown-item{
         text-align: left;
         padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    html{
+        scroll-padding-top: 300px;
+    }
+    img{
+        margin-bottom: 30px;
+    }
+    .container{
+        padding: 50px;
     }
 }
