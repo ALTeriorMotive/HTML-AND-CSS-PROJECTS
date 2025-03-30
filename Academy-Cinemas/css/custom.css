@@ -14,7 +14,9 @@
 
 body{
     background-image: url(../images/theater-curtains.jpg);
-    background-size: 100%;
+    background-size: 100% 120%; /* 100% horizontally and 120% vertically */
+    background-attachment: fixed;
+    overflow-x: hidden; /* Removes left to right scroll bar */
 }
 
 /* NAVBAR */
@@ -112,12 +114,25 @@ body{
 
 /* GENERAL STYLING */
 
+h1, h3, p{
+    cursor: default; /* Changes the cursor back to the default arrow instead of a text cursor when hovering your mouse over text */
+}
+
 h1{
     font-family: var(--main-font-family);
     color: var(--main-color-accent);
     text-shadow: 0 0 10px rgb(0, 0, 0);
     text-align: center;
     font-size: 100px;
+}
+
+h3{
+    font-family: var(--main-font-family);
+    font-size: 50px;
+}
+
+b{
+    font-weight: 600;
 }
 
 /* MOVIE CARDS */
