@@ -281,3 +281,23 @@ input[type="number"]:focus{
 #contact-submit{
     float: right;
 }
+
+/* FOOTER */
+
+footer{
+    border-top: 5px solid var(--main-color);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px -15px 0px -15px; /* Extends the footer beyond the webpage on the left and right sides leaving no white space */
+}
+
+.footer-text{
+    font-family: var(--main-font-family);
+    color: var(--accent-text-color);
+    font-size: 30px;
+}
+
+/* Specifically styles the footer image separate from the other images on the page and overrides the img selector styling */
+.footer-image{
+    width: auto;
+    height: 130px;
+}
