@@ -1,0 +1,94 @@
+html{
+    overflow-x: hidden;
+    background-color: cadetblue;
+}
+
+/* GENERAL STYLING */
+
+#spidey{
+    border-radius: 15px;
+}
+
+.container{
+    padding-top: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+/* TABLE */
+
+section table{
+    margin: auto;
+    margin-top: 18px;
+    border-collapse: collapse;
+    font-weight: 600;
+    font-size: 27.25px;
+}
+
+section td{
+    border: 2px solid hotpink;
+    padding: 2px 5px;
+}
+
+section td:nth-child(1){
+    background-color: mediumslateblue;
+    color: white;
+}
+
+section td:nth-child(2){
+    background-color: #c40818;
+    color: blue;
+}
+
+section td:nth-child(3){
+    background-color: black;
+    color: red;
+}
+
+section td:nth-child(4){
+    background-color: white;
+    color: black;
+}
+
+#row-head td{
+    background-color: mediumslateblue;
+    color: white;
+}
+
+/* FILTERS */
+
+.invert{
+    filter: invert(0%);
+    transition: 0.25s ease-out;
+}
+
+.invert:hover{
+    filter: invert(100%);
+    transition: 0.25s ease-out;
+}
+
+
+/* FOOTER */
+
+footer{
+    position: absolute;
+    width: 100%;
+    margin: 0px -15px 0px -15px;
+    padding: 0px 15px 20px 0px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    bottom: 0;
+    background-color: #1e1e1e;
+    color: white;
+    border-top: 5px solid rgb(200, 0, 30);
+}
+
+.footer-table{
+    width: 50%;
+}
+
+.footer-td{
+    width: 10%;
+}
