@@ -8,14 +8,23 @@
 </head>
 
 <body>
+<!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li class="separator"><a href="#spidey">Image</a></li>
+            <li class="separator"><a href="#spidey-table">Table</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+    <!-- IMAGE -->
     <div>
         <div class="container">
-            <img class="invert" id="spidey" src="Spider-Man.jpg" alt="Image of Spider-Man on a car">
+            <img class="invert" id="spidey" src="Miles.jpg" alt="Image of Spider-Man (Miles Morales) on a car">
             <p id="text-over-image">It's Spider-Man! :D</p>
         </div>
         <!-- TABLE -->
         <section>
-            <table>
+            <table id="spidey-table">
                 <tr id="row-head">
                     <td>Spider-People</td>
                     <td>Spider-Man (Original)</td>
@@ -37,8 +46,18 @@
             </table>
         </section>
     </div>
+    <!-- COLUMNS -->
+    <div class="row">
+        <div class="column">
+            <img src="Peter.jpg" id="peter" alt="Image of Spider-Man (Peter Parker) swinging through the city">
+        </div>
+        <div class="column">
+            <img src="Gwen.jpg" id="gwen" alt="Image of Spider-Woman (Gwen Stacy)">
+        </div>
+    </div>
 </body>
-<footer class="invert">
+<!-- FOOTER -->
+<footer id="footer" class="invert">
     <div class="container">
         <table class="footer-table">
             <tr>

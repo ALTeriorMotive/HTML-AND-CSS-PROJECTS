@@ -1,9 +1,74 @@
 html{
     overflow-x: hidden;
     background-color: cadetblue;
+    scroll-padding-top: 100px;
+}
+
+body{
+    height: 100%;
+}
+
+/* NAVBAR */
+
+nav{
+    position: sticky;
+    margin: -10px -20px 0px -10px;
+    background-color: #1e1e1e;
+    top: 0;
+    left: 0;
+    padding: 0px 0px;
+    height: 82px;
+    box-sizing: border-box;
+    z-index: 5;
+    border-bottom: 5px solid #c40818;
+}
+
+li{
+    display: inline-flex;
+    padding: 10px 0px;
+}
+
+.separator::after{
+    content: "";
+    width: 5px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    left: 2px;
+    position: relative;
+}
+
+ul{
+    width: 30%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: background-color 0.2s ease-out;
+}
+
+a:hover{
+    font-size: 42px;
+    background-color: black;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-out;
 }
 
 /* GENERAL STYLING */
+
+p:hover{
+    text-decoration: underline;
+}
 
 #spidey{
     border-radius: 15px;
@@ -31,7 +96,6 @@ div .container{
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* TABLE */
 
@@ -86,13 +150,47 @@ section td:nth-child(4){
 }
 
 
+/* COLUMNS */
+
+.row{
+    position: relative;
+    background-color: darkcyan;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.column{
+    width: 50%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    object-fit: cover;
+    color: lawngreen;
+}
+
+#gwen, #peter{
+    width: 100%;
+    aspect-ratio: 1/1.537;
+}
+
+#peter{
+    height: 110%;
+    aspect-ratio: 1/1.537;
+}
+
 /* FOOTER */
 
 footer{
-    position: absolute;
-    width: 100%;
-    margin: 0px -15px 0px -15px;
-    padding: 0px 15px 20px 0px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    padding: 0px 0px 20px 0px;
     align-items: center;
     text-align: center;
     font-weight: bold;
