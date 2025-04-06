@@ -66,6 +66,31 @@ a:hover{
 
 /* GENERAL STYLING */
 
+h2{
+    position: absolute;
+    align-self: center;
+    font-size: 40px;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    padding: 5px 20px;
+    background-color: #1e1e1e;
+    border-radius: 3px;
+}
+
+.column:hover h2{
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+
+.column:hover img{
+    opacity: 0.5;
+    transition: opacity 0.2s ease-out;
+}
+
+.column img{
+    transition: opacity 0.2s ease-out;
+}
+
 p:hover{
     text-decoration: underline;
 }
@@ -154,7 +179,7 @@ section td:nth-child(4){
 
 .row{
     position: relative;
-    background-color: darkcyan;
+    background-color: lightsteelblue;
     width: 40%;
     margin: auto;
     margin-top: 30px;
@@ -163,13 +188,15 @@ section td:nth-child(4){
 }
 
 .column{
+    position: relative;
     width: 50%;
     overflow: hidden;
     margin-bottom: 0px;
     padding-bottom: 0px;
     display: flex;
     object-fit: cover;
-    color: lawngreen;
+    color: rgb(200, 0, 30);
+    justify-content: center;
 }
 
 #gwen, #peter{
