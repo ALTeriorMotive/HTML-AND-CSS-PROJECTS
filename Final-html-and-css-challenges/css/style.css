@@ -67,6 +67,12 @@ a:hover{
 
 /* GENERAL STYLING */
 
+p{
+    color: rgba(0, 0, 0, 0);
+    font-size: 45px;
+    position: absolute;
+}
+
 h2{
     position: absolute;
     align-self: center;
