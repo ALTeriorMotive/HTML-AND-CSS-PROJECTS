@@ -58,7 +58,7 @@ a{
     transition: background-color 0.2s ease-out;
 }
 
-a:hover{
+li:hover a{
     font-size: 42px;
     background-color: black;
     border-radius: 3px;
@@ -97,13 +97,13 @@ h2{
     color: white;
 }
 
-.video-overlay{
+#video-overlay{
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.column:hover h2, .video-overlay:hover h2{
+.column:hover h2, #video-overlay:hover h2{
     opacity: 1;
     transition: opacity 0.2s ease-out;
 }
@@ -156,11 +156,21 @@ section table{
     border-collapse: collapse;
     font-weight: 600;
     font-size: 27.25px;
+    background-color: white;
 }
 
 section td{
     border: 2px solid hotpink;
     padding: 2px 5px;
+}
+
+td:hover{
+    filter: opacity(0.8);
+    cursor: default;
+}
+
+tr:nth-child(2) td:nth-child(4):hover, tr:nth-child(3) td:nth-child(4):hover{
+    filter: contrast(80%);
 }
 
 section td:nth-child(1){
