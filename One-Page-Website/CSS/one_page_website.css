@@ -65,3 +65,96 @@ form{
 input[name="submit"]{
     font-family: "Noto Sans", sans-serif; /* Font from fonts.google.com */
 }
+
+/* Styling added during JavaScript course */
+
+
+/* Cleans up video and image styling slightly */
+#videos, #videos iframe{
+    width: 660px;
+    height: 371px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#images{
+    width: 650px;
+    height: 183px;
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Used to style lightbox previews before opening */
+.preview{
+    height: 183px;
+    width: 325px;
+    padding: 2px 10px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.preview-text{
+    position: relative;
+    width: 100px;
+    height: 27px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    left: 50%;
+    bottom: 37px;
+    margin: 0;
+    transform: translate(-50%);
+    padding: 2px 5px;
+    border-radius: 4px 4px 0 0;
+    display: none;
+}
+
+.lightbox-preview{
+    z-index: 2;
+}
+
+/* Hover effects for the previews */
+.lightbox-preview:hover .preview{
+    border: 2px solid white;
+    padding: 0 8px;
+}
+
+.lightbox-preview:hover .preview-text{
+    display: block;
+}
+
+/* Styling for lightbox */
+
+.lightbox-open{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+}
+
+.open{
+    position: relative;
+    height: 560px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+}
+
+.one, .two{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    z-index: 2;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}

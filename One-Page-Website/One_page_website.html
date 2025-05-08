@@ -5,6 +5,7 @@
 		<meta name="description" content="A basic website about Esports/video games">
 		<link rel="stylesheet" href="CSS/one_page_website.css">
 		<title>Esports info</title>
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 		<!--NAVIGATION-->
@@ -87,17 +88,28 @@
 				</article>
 			</div>
 		</section>
+		<!--VIDEO-->
+		<div id="videos">
+			<iframe src="https://www.youtube.com/embed/GRrp5S228fg?si=tPtmwnN3QwIwbViS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
 		<!--IMAGES-->
 		<section>
 			<div id="images">
-				<img width="600" height="400" src="https://liquipedia.net/commons/images/thumb/3/31/Gaimin_Gladiators_win_Riyadh_Masters_2024.jpg/563px-Gaimin_Gladiators_win_Riyadh_Masters_2024.jpg" alt="Riyadh Masters 2024">
-				<img height="400" src="https://static.gosugamers.net/9d/2c/65/25ca740760598b744b76ebf0b6f4b595a50f8372153fa417e02b9de9f9.webp?w=1600" alt="LoL World Championship 2024">
+				<div class="lightbox-open">
+					<img class="open one" src="https://liquipedia.net/commons/images/thumb/3/31/Gaimin_Gladiators_win_Riyadh_Masters_2024.jpg/563px-Gaimin_Gladiators_win_Riyadh_Masters_2024.jpg" alt="Riyadh Masters 2024">
+					<img class="open two" src="https://static.gosugamers.net/9d/2c/65/25ca740760598b744b76ebf0b6f4b595a50f8372153fa417e02b9de9f9.webp?w=1600" alt="LoL World Championship 2024">
+					<a class="close" onclick="closeLightbox()">X</a>
+				</div>
+				<div class="lightbox-preview">
+					<img class="preview" id="one" src="https://liquipedia.net/commons/images/thumb/3/31/Gaimin_Gladiators_win_Riyadh_Masters_2024.jpg/563px-Gaimin_Gladiators_win_Riyadh_Masters_2024.jpg" alt="Riyadh Masters 2024">
+					<p class="preview-text">Click to open</p>
+				</div>
+				<div class="lightbox-preview">
+					<img class="preview" id="two" src="https://static.gosugamers.net/9d/2c/65/25ca740760598b744b76ebf0b6f4b595a50f8372153fa417e02b9de9f9.webp?w=1600" alt="LoL World Championship 2024">
+					<p class="preview-text">Click to open</p>
+				</div>
 			</div>
 		</section>
-		<!--VIDEO-->
-		<div id="videos">
-			<iframe width="600" height="338" src="https://www.youtube.com/embed/GRrp5S228fg?si=tPtmwnN3QwIwbViS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-		</div>
 		<!--FOOTER-->
 		<footer>
 			<h2>Contact us!</h2>
